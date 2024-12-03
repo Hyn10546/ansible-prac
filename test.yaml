@@ -1,0 +1,10 @@
+---
+- name: test
+  hosts: servera
+  tasks:
+    - name: validate config
+      command: httpd -t
+      register: testresult
+    - name: view
+      debug:
+        var: testresult

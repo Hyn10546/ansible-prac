@@ -1,0 +1,8 @@
+---
+- name: sample playbook
+  hosts: servera
+  tasks:
+  - name: sample task
+    dnf:
+      name: httpd
+      state: absent

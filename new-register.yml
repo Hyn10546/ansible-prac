@@ -1,0 +1,11 @@
+# new-register.yaml
+---
+- name: Loop Register Test
+  gather_facts: no
+  hosts: seoul
+  tasks:
+    - name: Looping Echo Task
+      ansible.builtin.shell: "echo This is my item: {{ item }}"
+      loop:
+        - one
+        - two

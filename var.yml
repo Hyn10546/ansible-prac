@@ -1,0 +1,15 @@
+---
+- name: Seoul Play
+  hosts: seoul
+  tasks:
+  - name: Show various Ansible facts
+    debug:
+      msg: >
+        The seoul of package is {{ package }}
+- name: Busan Play
+  hosts: busan
+  tasks:
+  - name: Show various Ansible facts
+    debug:
+      msg: >
+        The seoul of package is {{ package }}

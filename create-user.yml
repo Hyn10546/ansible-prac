@@ -1,0 +1,9 @@
+---
+- hosts: all
+  vars_files:
+    - user.yml
+  tasks:
+    - name: "{{ user }} created"
+      user:
+        name: "{{ user }}"
+        home: "{{ home }}"
